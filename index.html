@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="no">
-  <!-- kontrol+stjerne gir kommentar, head er kun for nettleserinformasjon -->
+  <!-- Head er kun for nettleser informasjon -->
   <head>
     <title>Hjem</title>
-    <link rel="icon" type="image/x-icon" href="browser.png" />
+    <link rel="icon" type="image/x-icon" href="images/html.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
 
-  <!-- body body det som skal synes -->
-
+  <!-- Body er kun for det som skal synes på selve nettsiden. Alt-z er wordwrap! -->
   <body>
     <header>
+      <img class="headerLogo" src="images/html.png" alt="Logo with a code bracket." />
       <nav>
-        <a href="">Hjem</a>
-        <a href="">Om meg</a>
-        <a href="">Prosjekter</a>
+        <!-- Navigasjons elementene skal være en ul-liste. Bookmark anchors -->
+        <a href="">Nav 1</a>
+        <a href="">Nav 2</a>
+        <a href="">Nav 3</a>
       </nav>
     </header>
-
     <main>
-      <section>
-        <h1>Velkommen til min side! Kan bare være én h1!</h1>
-        <p id="print">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsum
-          aperiam quas debitis natus officia.
-        </p>
+      <section class="sectionHero">
+        <!-- Hero-section. Kort introduksjon til produktet. Bookingknapp. -->
+        <img class="heroImg" src="#" alt="Bilde av en matrett.">
+        <div class="heroText">
+          <h1>Restaurant</h1>
+          <p>Slagord for Restaurant</p>
+          <div class="heroButtons">
+            <button>Bestill bord</button>
+            <button>Bestill levering</button>
+          </div>
+        </div>
       </section>
+
       <section>
-        <h2>Underoverskrift: Om Meg</h2>
+        <!-- Seksjon 2 -->
       </section>
+
       <section>
-        <h2>Prosjekter</h2>
+        <!-- Seksjon 3 -->
       </section>
     </main>
-
     <footer>
-      <h3>Laget av Eivind</h3>
+      <h4>Laget av Julie</h4>
     </footer>
   </body>
 </html>
